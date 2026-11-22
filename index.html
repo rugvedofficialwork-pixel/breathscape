@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breathscape</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="stage">
+        <video id="video" playsinline muted></video>
+        <canvas id="canvas"></canvas>
+      </div>
+      <div id="start" class="mist">
+        <header class="topbar">
+          <span class="brand"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21 V10 C6 6 8.8 3.5 12 3.5 C15.2 3.5 18 6 18 10 V21" /><path d="M4 21 H20" /></svg><em>Breathscape</em></span>
+          
+          <span class="pill">Headphones on</span>
+        </header>
+        <section class="lead">
+          <h1>Breathe with <span class="gold">the Light</span></h1>
+          <p class="sub">A few minutes of guided box breathing. Tilt your head up as you breathe in and let it settle as you breathe out; the particles around you rise and fall with you.</p>
+          <div class="ctas">
+            <button id="begin" class="dark">Begin</button>
+            <span class="note">Please put on headphones.</span>
+          </div>
+          <p id="status" class="note"></p>
+        </section>
+      </div>
+      <div id="caption"></div>
+      <div id="hint"></div>
+      <button id="skip" class="gone">Skip</button>
+      <div id="endcard" class="gone mist">
+        <p class="endline">Well done. That was the breathing.</p>
+        <button id="again">Start again</button>
+      </div>
+      <div id="debug" hidden></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,301 @@
+{
+  "_readme": "All tunable numbers. Positions: az degrees (0 front, +90 right, 180 behind, -90 left), el degrees (+90 overhead), dist metres. Times in seconds, levels are linear gain 0..1. The harness reloads this file live when you save it (a running cue keeps the values it started with; fire it again to hear changes).",
+
+  "features": { "partF2": false },
+
+  "assets": ["wind_loop.wav", "wind_gusts_loop.wav", "water_loop.wav", "impulse_room.wav"],
+
+  "global": {
+    "latencySec": 0.1,
+    "masterLevel": 0.8,
+    "maxPanners": 24,
+    "minFadeSec": 0.15,
+    "controlHz": 30,
+    "pathRate": 20,
+    "distance": {
+      "refDist": 1,
+      "nearMaxGain": 1.5,
+      "minGain": 0.03,
+      "airRefDist": 2,
+      "airMinHz": 2200,
+      "airMaxHz": 18000,
+      "wetDistanceExponent": 0.4
+    },
+    "reverb": { "seconds": 2.0, "preDelayMs": 18, "damping": 0.7, "returnLevel": 0.6, "impulseFile": "impulse_room.wav" },
+    "limiter": { "thresholdDb": -6, "kneeDb": 6, "ratio": 4, "attack": 0.01, "release": 0.3, "makeupTrimDb": -2.7, "ceiling": 0.9 },
+    "duck": { "depthDb": 6, "attackSec": 0.15, "releaseSec": 0.8, "floorDb": -50, "rangeDb": 20 },
+    "tracking": { "holdSec": 1.5, "relaxSec": 4 },
+    "externalize": {
+      "earlyReflections": true,
+      "erLevel": 1,
+      "erSend": 0.35,
+      "headSway": false,
+      "swayAzDeg": 2.5,
+      "swayElDeg": 1,
+      "swayPeriodSec": 11
+    },
+    "voiceClips": { "rate": 0.95, "gain": 0.5, "warmthDb": 3, "softTopHz": 7500 }
+  },
+
+  "params": {
+    "handHeight":    { "min": 0,  "max": 1, "rest": 0,   "smoothSec": 0.15 },
+    "wristSpread":   { "min": 0,  "max": 1, "rest": 0,   "smoothSec": 0.2 },
+    "armsRaised":    { "min": 0,  "max": 1, "rest": 0,   "smoothSec": 0.2 },
+    "userScreenX":   { "min": -1, "max": 1, "rest": 0,   "smoothSec": 0.25 },
+    "windIntensity": { "min": 0,  "max": 1, "rest": 0.3, "smoothSec": 0.8, "gesture": false }
+  },
+
+  "voicePaths": {
+    "center": { "label": "Centered, close, nearly dry", "pos": { "az": 0, "el": 0, "dist": 1 }, "wet": 0.05, "level": 1, "glideSec": 2 },
+
+    "stage2.voice.close": {
+      "label": "Stage 2 Movements 1-2: dry, close, centered",
+      "pos": { "az": 0, "el": 0, "dist": 0.7 }, "wet": 0.02, "level": 0.9, "glideSec": 3
+    },
+    "stage2.voice.drift": {
+      "label": "Movement 3 'Notice - it arrived from somewhere.': drifts slowly to the left",
+      "path": { "points": [ { "t": 9, "az": -70, "el": 0, "dist": 1.1 } ] },
+      "wet": 0.06, "glideSec": 9
+    },
+    "stage2.voice.arc": {
+      "label": "Movement 3: slow arc behind the listener, left -> behind -> right. 'There it goes.' at marker thereItGoes",
+      "path": { "points": [
+        { "t": 7,  "az": 180, "el": 0, "dist": 1.4 },
+        { "t": 14, "az": 70,  "dist": 1.3 }
+      ] },
+      "markers": { "behind": 7, "thereItGoes": 7.5 },
+      "wet": 0.1, "glideSec": 3
+    },
+    "stage2.voice.return": {
+      "label": "Movement 4: back to center, quieter, further, more open",
+      "path": { "points": [ { "t": 5, "az": 0, "el": 0, "dist": 1.6 } ] },
+      "wet": 0.3, "level": 0.8, "glideSec": 5
+    },
+    "stage4.voice.dry": {
+      "label": "Stage 4: fully centered and dry, back in the room",
+      "pos": { "az": 0, "el": 0, "dist": 1 }, "wet": 0, "level": 1, "glideSec": 4
+    }
+  },
+
+  "cues": {
+    "check.front":  { "kind": "point", "label": "check: front",  "bus": "fx", "sound": "checkPulses", "pos": { "az": 0,   "el": 0, "dist": 1.5 }, "level": 0.35, "wet": 0.08, "fadeIn": 0.15 },
+    "check.left":   { "kind": "point", "label": "check: left",   "bus": "fx", "sound": "checkPulses", "pos": { "az": -90, "el": 0, "dist": 1.5 }, "level": 0.35, "wet": 0.08, "fadeIn": 0.15 },
+    "check.right":  { "kind": "point", "label": "check: right",  "bus": "fx", "sound": "checkPulses", "pos": { "az": 90,  "el": 0, "dist": 1.5 }, "level": 0.35, "wet": 0.08, "fadeIn": 0.15 },
+    "check.behind": { "kind": "point", "label": "check: behind", "bus": "fx", "sound": "checkPulses", "pos": { "az": 180, "el": 0, "dist": 1.5 }, "level": 0.35, "wet": 0.08, "fadeIn": 0.15 },
+
+    "test.frontHold": {
+      "kind": "point", "label": "test: front steady", "bus": "fx", "sound": "probe", "noise": 0.35, "tone": 0.08,
+      "pos": { "az": 0, "el": 0, "dist": 1.5 }, "level": 0.3, "wet": 0.12, "fadeIn": 1, "fadeOut": 1, "hold": 12
+    },
+    "test.orbit": {
+      "kind": "path", "label": "test: orbit", "bus": "fx", "sound": "probe", "level": 0.3, "wet": 0.15, "fadeIn": 1.5, "fadeOut": 1.5,
+      "path": { "points": [
+        { "t": 0,  "az": 0,   "el": 0, "dist": 1.5 },
+        { "t": 5,  "az": 90,  "turn": "cw" },
+        { "t": 10, "az": 180, "turn": "cw" },
+        { "t": 15, "az": -90, "turn": "cw" },
+        { "t": 20, "az": 0,   "turn": "cw" }
+      ] },
+      "markers": { "right": 5, "behind": 10, "left": 15 }
+    },
+    "test.approach": {
+      "kind": "path", "label": "test: approach", "bus": "fx", "sound": "probe", "level": 0.35, "wet": 0.2, "fadeIn": 2, "fadeOut": 1.5,
+      "path": { "points": [
+        { "t": 0,  "az": 0, "el": 0, "dist": 8 },
+        { "t": 12, "dist": 1.2 },
+        { "t": 15, "dist": 1.2 }
+      ] }
+    },
+    "test.overhead": {
+      "kind": "path", "label": "test: over the top", "bus": "fx", "sound": "probe", "level": 0.3, "wet": 0.15, "fadeIn": 1.5, "fadeOut": 1.5,
+      "path": { "points": [
+        { "t": 0,  "az": 0,   "el": 0,  "dist": 1.5 },
+        { "t": 6,  "el": 75 },
+        { "t": 12, "az": 180, "el": 0 }
+      ] },
+      "markers": { "overhead": 6 }
+    },
+
+    "pre.warmTone": {
+      "kind": "point", "label": "warm tone", "bus": "bed", "sound": "warmTone", "rootHz": 110, "lowpassHz": 900,
+      "pos": { "az": 0, "el": 0, "dist": 1.6 }, "level": 0.21, "wet": 0.2, "fadeIn": 3, "fadeOut": 4
+    },
+
+    "stage1.breathDrone": {
+      "kind": "custom", "label": "breath drone", "bus": "bed",
+      "pos": { "az": 0, "el": 0, "dist": 1.6 }, "wet": 0.2, "fadeIn": 3, "fadeOut": 4,
+      "rootHz": 110, "semitones": 4, "phaseSec": 4, "cycles": 6,
+      "mode": "timeline", "handBlend": 0.5, "pitchGlideSec": 0.25, "firstInhaleIn": 0,
+      "cycleLevel":     [0.17, 0.157, 0.143, 0.13, 0.115, 0.026],
+      "cycleCutoffHz":  [1600, 1250, 1000, 800, 620, 420],
+      "cycleHarmonics": [1, 0.8, 0.6, 0.42, 0.28, 0.08],
+      "timbreGlideSec": 3, "restDip": 0.85, "air": 0.12,
+      "crossfadeFrom": "pre.warmTone", "crossfadeSec": 5,
+      "cueTones": {
+        "cycles": "all", "level": 0.035, "cycle6Level": 0.06,
+        "hz": { "inhale": 440, "hold": 554.37, "exhale": 329.63, "rest": 293.66 },
+        "decaySec": 2.2, "pos": { "az": 0, "el": 0, "dist": 1.4 }, "wet": 0.25
+      },
+      "close": { "thinSec": 8, "level": 0.012, "cutoffHz": 300, "fadeSec": 10 }
+    },
+    "stage1.close": { "kind": "custom", "label": "drone thins (close your eyes)", "thinSec": 8 },
+
+    "stage2.ambientWiden": {
+      "kind": "custom", "label": "ambient layer", "bus": "bed", "sound": "airPad",
+      "start": { "az": 0, "el": 0, "dist": 3 }, "startSpreadDeg": 12,
+      "targets": [
+        { "az": -150, "el": 5,  "dist": 3.5 },
+        { "az": -90,  "el": 15, "dist": 3.5 },
+        { "az": -30,  "el": 5,  "dist": 3.5 },
+        { "az": 30,   "el": 10, "dist": 3.5 },
+        { "az": 90,   "el": 5,  "dist": 3.5 },
+        { "az": 150,  "el": 15, "dist": 3.5 }
+      ],
+      "notes": [220, 277.18, 329.63, 440, 164.81, 246.94],
+      "widenSec": 20, "level": 0.07, "wet": 0.35, "fadeIn": 6, "fadeOut": 8
+    },
+    "stage2.fadeOut": {
+      "kind": "custom", "label": "fade to the low tone", "fadeSec": 15,
+      "fade": ["stage2.ambientWiden", "stage1.breathDrone", "pre.warmTone"],
+      "linger": "stage2.lowTone"
+    },
+    "stage2.lowTone": {
+      "kind": "point", "label": "low tone (into Stage 3)", "bus": "bed", "sound": "lowTone", "rootHz": 55, "lowpassHz": 400,
+      "pos": { "az": 0, "el": 0, "dist": 2.5 }, "level": 0.16, "wet": 0.3, "fadeIn": 8, "fadeOut": 6
+    },
+
+    "stage3.partA.portal": {
+      "kind": "custom", "label": "portal", "bus": "fx", "wet": 0.35,
+      "start": { "az": 0, "el": 0, "dist": 3 }, "startSpreadDeg": 8,
+      "targets": [
+        { "az": -150, "el": 0,  "dist": 1.3 },
+        { "az": -90,  "el": 10, "dist": 1.3 },
+        { "az": -30,  "el": 0,  "dist": 1.3 },
+        { "az": 0,    "el": 40, "dist": 1.5 },
+        { "az": 30,   "el": 0,  "dist": 1.3 },
+        { "az": 90,   "el": 10, "dist": 1.3 },
+        { "az": 150,  "el": 0,  "dist": 1.3 }
+      ],
+      "moveSec": 3.2, "bandHz": [180, 900], "attackSec": 1.6, "peakAt": 2.4, "releaseSec": 2.4,
+      "levelEach": 0.28, "sub": { "hz": 55, "level": 0.5 },
+      "resolves": "stage2.lowTone",
+      "markers": { "enveloped": 2.4 }
+    },
+
+    "stage3.partB.ambientBed": {
+      "kind": "custom", "label": "world bed", "bus": "bed", "fadeIn": 6, "fadeOut": 6,
+      "wind": {
+        "sources": [
+          { "az": -130, "el": 5,  "dist": 4.5 },
+          { "az": -50,  "el": 0,  "dist": 5 },
+          { "az": 40,   "el": 5,  "dist": 5 },
+          { "az": 120,  "el": 0,  "dist": 4.5 },
+          { "az": -10,  "el": 38, "dist": 6 },
+          { "az": 170,  "el": 32, "dist": 6 }
+        ],
+        "level": 0.5, "wet": 0.3,
+        "bandHz": [420, 650, 520, 800, 1100, 950],
+        "gustHz": [0.07, 0.113],
+        "wanderDeg": 12, "wanderPeriodSec": 23, "wanderCount": 2,
+        "intensity": { "levelMin": 0.3, "levelMax": 2.6, "brightHzMin": 1400, "brightHzMax": 6500, "gustMin": 0.15, "gustMax": 0.5, "rateMin": 1, "rateMax": 2.4 },
+        "file": "wind_loop.wav", "gustFile": "wind_gusts_loop.wav"
+      },
+      "water": {
+        "sources": [ { "az": 55, "el": -25, "dist": 8 }, { "az": 70, "el": -22, "dist": 8.5 } ],
+        "level": 0.9, "wet": 0.25, "lowpassHz": 2600, "fileLowpassHz": 9000, "fileGain": 1.4,
+        "file": "water_loop.wav"
+      }
+    },
+
+    "stage3.partC.trial": {
+      "kind": "custom", "label": "tension pulse", "bus": "fx", "wet": 0.25, "fadeIn": 3, "fadeOut": 4,
+      "from": { "az": 0, "el": 0, "dist": 8 }, "to": { "az": 0, "el": 0, "dist": 1.5 },
+      "durationSec": 60, "bpm": [50, 62], "beatLevel": [0.35, 0.36], "thumpHz": 52,
+      "resolve": { "bpm": 36, "slowSec": 5, "fadeSec": 6 }
+    },
+    "stage3.partC.windPicksUp": { "kind": "param", "label": "\"The wind picks up\"", "param": "windIntensity", "value": 0.65, "sec": 6 },
+    "stage3.partC.windLouder":  { "kind": "param", "label": "\"The wind is louder\"", "param": "windIntensity", "value": 1, "sec": 5 },
+
+    "stage3.partD.resolve": {
+      "kind": "custom", "label": "the path opens", "pulse": "stage3.partC.trial",
+      "windTo": 0.3, "windSettleSec": 8, "tone": "stage3.partD.risingTone", "toneDelay": 2.5
+    },
+    "stage3.partD.risingTone": {
+      "kind": "point", "label": "rising tone", "bus": "fx", "sound": "risingTone", "notes": [196, 293.66, 392], "stepSec": 2.5, "swellSec": 3.5, "lowpassHz": 1600,
+      "pos": { "az": 0, "el": 0, "dist": 1.6 }, "level": 0.055, "wet": 0.3, "fadeIn": 3, "fadeOut": 4
+    },
+
+    "stage3.partE.swell": {
+      "kind": "custom", "label": "harmonic swell (width follows armsRaised)", "bus": "fx", "wet": 0.35,
+      "rootHz": 98, "partials": [1, 2, 3, 4, 5, 6, 8],
+      "targets": [
+        { "az": 0,    "el": 0,  "dist": 2.2 },
+        { "az": -50,  "el": 5,  "dist": 2.4 },
+        { "az": 50,   "el": 5,  "dist": 2.4 },
+        { "az": -110, "el": 20, "dist": 2.6 },
+        { "az": 110,  "el": 20, "dist": 2.6 },
+        { "az": -160, "el": 30, "dist": 2.8 },
+        { "az": 160,  "el": 30, "dist": 2.8 }
+      ],
+      "stepSec": 0.7, "riseSec": 4, "holdSec": 3, "sustain": 0.45, "settleSec": 6,
+      "level": 0.12, "fadeOut": 6,
+      "replaces": "stage3.partD.risingTone", "replaceFadeSec": 6
+    },
+
+    "stage3.partF.effect": {
+      "kind": "custom", "label": "word effect (wristSpread)", "fadeOut": 4,
+      "replaces": ["stage3.partE.swell", "stage3.partD.risingTone"], "replaceFadeSec": 3,
+      "fingertips": { "az": 0, "el": -10, "dist": 0.6 },
+      "chest": { "az": 0, "el": -25, "dist": 0.3 },
+      "kindness": {
+        "poolSize": 7, "rate": [0.5, 2.4], "widthDeg": [25, 360], "screenAzDeg": 40,
+        "elDeg": [-5, 35], "dist": [1.3, 3.5],
+        "notes": [587.33, 659.25, 783.99, 880, 987.77, 1174.66, 1318.51],
+        "level": 0.12, "decaySec": 2.5, "wet": 0.35
+      },
+      "acceptance": {
+        "pass": { "count": 2, "dist": [2.2, 0.7], "el": 0, "speedDegPerSec": 16, "level": 0.26, "wet": 0.2, "lowpassHz": [9000, 1800] },
+        "room": { "rootHz": 146.83, "core": { "az": 0, "el": -10, "dist": 0.6 }, "level": 0.24, "sideAzDeg": [12, 80], "wet": 0.45 }
+      },
+      "courage": {
+        "near": { "count": 2, "dist": 1.6, "el": 0, "speedDegPerSec": 14, "level": 0.3, "wet": 0.2 },
+        "bedQuiet": 0.55
+      },
+      "calm": {
+        "heart": { "pos": { "az": 0, "el": -25, "dist": 0.45 }, "bpm": [64, 44], "level": [0.3, 0.08], "hz": 50, "wet": 0.1 },
+        "windRange": [0, 0.45], "waterRange": [0.3, 0.65], "heartRange": [0.55, 1]
+      },
+      "glow": { "level": 0.08, "hz": 196, "wet": 0.3 }
+    },
+
+    "stage3.partF2.gather":  { "kind": "custom", "feature": "partF2", "label": "PROPOSAL pinch: effect draws in to the fingertips", "focus": "gather" },
+    "stage3.partF2.chest":   { "kind": "custom", "feature": "partF2", "label": "PROPOSAL fingertips at chest: converges at the chest", "focus": "chest" },
+    "stage3.partF2.letItIn": { "kind": "custom", "feature": "partF2", "label": "PROPOSAL let it in: sinks in, warm tone blooms", "bloom": "stage3.partF2.warmBloom", "bloomDelay": 0.8 },
+    "stage3.partF2.warmBloom": {
+      "kind": "point", "feature": "partF2", "label": "warm bloom", "bus": "fx", "sound": "lowTone", "rootHz": 98, "lowpassHz": 500,
+      "pos": { "az": 0, "el": -25, "dist": 0.3 }, "level": 0.085, "wet": 0.2, "fadeIn": 1.6, "hold": 8, "fadeOut": 4
+    },
+
+    "stage3.partG.return": {
+      "kind": "custom", "label": "effect + bed fade with the hands",
+      "follow": ["stage3.partF.effect", "stage3.partB.ambientBed"],
+      "fadeNow": ["stage3.partE.swell", "stage3.partD.risingTone"],
+      "downAt": 0.04, "downHoldSec": 1, "timedSec": 8, "trackingLostSec": 2
+    },
+    "stage3.partG.whoosh": {
+      "kind": "custom", "label": "portal, softer and reversed", "bus": "fx", "wet": 0.35, "reverse": true, "levelScale": 0.5,
+      "start": { "az": 0, "el": 0, "dist": 3 }, "startSpreadDeg": 8,
+      "targets": [
+        { "az": -150, "el": 0,  "dist": 1.3 },
+        { "az": -90,  "el": 10, "dist": 1.3 },
+        { "az": -30,  "el": 0,  "dist": 1.3 },
+        { "az": 0,    "el": 40, "dist": 1.5 },
+        { "az": 30,   "el": 0,  "dist": 1.3 },
+        { "az": 90,   "el": 10, "dist": 1.3 },
+        { "az": 150,  "el": 0,  "dist": 1.3 }
+      ],
+      "moveSec": 3.2, "bandHz": [180, 900], "attackSec": 1.6, "peakAt": 2.4, "releaseSec": 2.4,
+      "levelEach": 0.28, "sub": { "hz": 55, "level": 0.5 }
+    }
+  }
+}

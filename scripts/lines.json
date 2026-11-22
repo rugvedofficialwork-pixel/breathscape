@@ -1,0 +1,694 @@
+[
+  {
+    "id": "s1.open",
+    "sentences": [
+      "Rest one hand out in front of you, palm up.",
+      "We’re going to breathe together, and your hand is going to breathe with you."
+    ]
+  },
+  {
+    "id": "s1.c1.in",
+    "sentences": [
+      "Breathe in — let your hand rise."
+    ]
+  },
+  {
+    "id": "s1.c1.hold",
+    "sentences": [
+      "hold it there."
+    ]
+  },
+  {
+    "id": "s1.c1.out",
+    "sentences": [
+      "Now let it go — hand comes back down."
+    ]
+  },
+  {
+    "id": "s1.c1.rest",
+    "sentences": [
+      "and rest."
+    ]
+  },
+  {
+    "id": "s1.c2.in",
+    "sentences": [
+      "Again.",
+      "In, and up."
+    ]
+  },
+  {
+    "id": "s1.c2.hold",
+    "sentences": [
+      "Hold."
+    ]
+  },
+  {
+    "id": "s1.c2.out",
+    "sentences": [
+      "Out, and down."
+    ]
+  },
+  {
+    "id": "s1.c2.rest",
+    "sentences": [
+      "Rest."
+    ]
+  },
+  {
+    "id": "s1.c3.in",
+    "sentences": [
+      "In."
+    ]
+  },
+  {
+    "id": "s1.c3.hold",
+    "sentences": [
+      "Hold."
+    ]
+  },
+  {
+    "id": "s1.c3.out",
+    "sentences": [
+      "Out."
+    ]
+  },
+  {
+    "id": "s1.c3.rest",
+    "sentences": [
+      "Rest."
+    ]
+  },
+  {
+    "id": "s1.c4.in",
+    "sentences": [
+      "In..."
+    ]
+  },
+  {
+    "id": "s1.c4.hold",
+    "sentences": [
+      "Hold..."
+    ]
+  },
+  {
+    "id": "s1.c4.out",
+    "sentences": [
+      "Out..."
+    ]
+  },
+  {
+    "id": "s1.c4.rest",
+    "sentences": [
+      "Rest."
+    ]
+  },
+  {
+    "id": "s1.c5.in",
+    "sentences": [
+      "In."
+    ]
+  },
+  {
+    "id": "s1.c5.hold",
+    "sentences": [
+      "Hold."
+    ]
+  },
+  {
+    "id": "s1.c5.out",
+    "sentences": [
+      "Out."
+    ]
+  },
+  {
+    "id": "s1.c6.one",
+    "sentences": [
+      "One more.",
+      "However it comes."
+    ]
+  },
+  {
+    "id": "s1.c6.good",
+    "sentences": [
+      "Good."
+    ]
+  },
+  {
+    "id": "s1.close",
+    "sentences": [
+      "Let your hand rest completely.",
+      "In a moment I’m going to ask you to close your eyes — you can do that now, whenever you’re ready."
+    ]
+  },
+  {
+    "id": "s1.open.head",
+    "sentences": [
+      "Sit comfortably, facing the screen, with your head level.",
+      "We’re going to breathe together.",
+      "As you breathe in, let your chin lift a little.",
+      "As you breathe out, let it come back down."
+    ]
+  },
+  {
+    "id": "s1.c1.in.head",
+    "sentences": [
+      "Breathe in — let your chin lift."
+    ]
+  },
+  {
+    "id": "s1.c1.out.head",
+    "sentences": [
+      "Now let it go — your head comes back down."
+    ]
+  },
+  {
+    "id": "s1.close.head",
+    "sentences": [
+      "Let your head rest, level and easy.",
+      "In a moment I’m going to ask you to close your eyes — you can do that now, whenever you’re ready."
+    ]
+  },
+  {
+    "id": "pre.a",
+    "sentences": [
+      "Welcome.",
+      "Over the next half hour, nothing is being asked of you except this: breathe when I say breathe, listen when I say listen, and move when I say move.",
+      "There’s no right way to feel about any of it."
+    ]
+  },
+  {
+    "id": "pre.b",
+    "sentences": [
+      "Get comfortable.",
+      "When you’re ready, we’ll begin."
+    ]
+  },
+  {
+    "id": "s2.m1.a",
+    "sentences": [
+      "Eyes closed now.",
+      "You don’t have to relax on command — just notice what’s actually here.",
+      "The weight of your body.",
+      "The sound of your own breath."
+    ]
+  },
+  {
+    "id": "s2.m1.b",
+    "sentences": [
+      "You don’t need to change anything yet.",
+      "Just arrive."
+    ]
+  },
+  {
+    "id": "s2.m2.a",
+    "sentences": [
+      "At some point in the next few minutes, a thought is going to show up.",
+      "Maybe it already has."
+    ]
+  },
+  {
+    "id": "s2.m2.b",
+    "sentences": [
+      "It might be about today.",
+      "About someone you haven’t resolved something with.",
+      "About yourself."
+    ]
+  },
+  {
+    "id": "s2.m2.c",
+    "sentences": [
+      "When it comes — don’t chase it, and don’t push it out.",
+      "Just see that it’s there.",
+      "The way you’d notice a sound in another room.",
+      "You don’t have to go check on it."
+    ]
+  },
+  {
+    "id": "s2.m3.a",
+    "sentences": [
+      "Notice — it arrived from somewhere."
+    ]
+  },
+  {
+    "id": "s2.m3.b",
+    "sentences": [
+      "And if you leave it alone, completely alone, it will go somewhere too."
+    ]
+  },
+  {
+    "id": "s2.m3.c",
+    "sentences": [
+      "You don’t have to help it leave.",
+      "You don’t have to hold the door for it either."
+    ]
+  },
+  {
+    "id": "s2.m3.d",
+    "sentences": [
+      "There it goes."
+    ]
+  },
+  {
+    "id": "s2.m4.a",
+    "sentences": [
+      "Notice what’s underneath, once you stop chasing the thought and stop fighting it."
+    ]
+  },
+  {
+    "id": "s2.m4.b",
+    "sentences": [
+      "That underneath place — that’s not empty.",
+      "That’s just you, without the argument."
+    ]
+  },
+  {
+    "id": "s2.m5.a",
+    "sentences": [
+      "Whatever is actually true for you right now — the good, the unresolved, the tired, the fine — is allowed to be true.",
+      "You don’t have to fix it before you’re allowed to rest in it."
+    ]
+  },
+  {
+    "id": "s2.m5.b",
+    "sentences": [
+      "You are not behind.",
+      "You are not late to your own life.",
+      "You are exactly where you are."
+    ]
+  },
+  {
+    "id": "s2.m6.a",
+    "sentences": [
+      "In a little while, there’s somewhere I’m going to ask you to go.",
+      "For now — just breathe.",
+      "Nothing to solve."
+    ]
+  },
+  {
+    "id": "s2.m6.b",
+    "sentences": [
+      "When you hear the door, you’ll know we’re moving on.",
+      "Stay exactly as you are until then."
+    ]
+  },
+  {
+    "id": "s3.a.1",
+    "sentences": [
+      "There’s a door in front of you."
+    ]
+  },
+  {
+    "id": "s3.a.2",
+    "sentences": [
+      "It’s already open."
+    ]
+  },
+  {
+    "id": "s3.a.3",
+    "sentences": [
+      "Step through."
+    ]
+  },
+  {
+    "id": "s3.b.1",
+    "sentences": [
+      "You’re somewhere else now."
+    ]
+  },
+  {
+    "id": "s3.b.2",
+    "sentences": [
+      "Under your feet — soft ground, damp, cool.",
+      "Somewhere close, water is moving.",
+      "Above you, more sky than you’re used to seeing at once."
+    ]
+  },
+  {
+    "id": "s3.b.3",
+    "sentences": [
+      "This place doesn’t need you to understand it.",
+      "It just needs you to walk."
+    ]
+  },
+  {
+    "id": "s3.b.4",
+    "sentences": [
+      "So walk."
+    ]
+  },
+  {
+    "id": "s3.c.1a",
+    "sentences": [
+      "Ahead of you, the path narrows."
+    ]
+  },
+  {
+    "id": "s3.c.1b",
+    "sentences": [
+      "The wind picks up — not dangerous, just insistent, like it’s testing whether you’ll turn back."
+    ]
+  },
+  {
+    "id": "s3.c.2",
+    "sentences": [
+      "There’s a weight to carry here.",
+      "Maybe it’s literal — a stone, a bag, something heavy in your arms.",
+      "Maybe it’s just tiredness.",
+      "Either way, it’s yours to carry for this stretch."
+    ]
+  },
+  {
+    "id": "s3.c.3",
+    "sentences": [
+      "Keep walking.",
+      "One step doesn’t need to know about the next one."
+    ]
+  },
+  {
+    "id": "s3.c.4a",
+    "sentences": [
+      "It’s harder now."
+    ]
+  },
+  {
+    "id": "s3.c.4b",
+    "sentences": [
+      "The wind is louder.",
+      "Your arms are tired."
+    ]
+  },
+  {
+    "id": "s3.c.5",
+    "sentences": [
+      "And still — you’re still walking."
+    ]
+  },
+  {
+    "id": "s3.d.intro1",
+    "sentences": [
+      "Here’s what’s true, even now, even tired, even carrying what you’re carrying:"
+    ]
+  },
+  {
+    "id": "s3.d.intro2",
+    "sentences": [
+      "You get to decide who you are in this exact moment.",
+      "Not who you were an hour ago.",
+      "Not who you’ll have to be tomorrow.",
+      "Just now."
+    ]
+  },
+  {
+    "id": "s3.d.kindness",
+    "sentences": [
+      "And right now — despite the wind, despite the weight — you choose kindness.",
+      "Not because it’s easy.",
+      "Because you’re choosing it anyway."
+    ]
+  },
+  {
+    "id": "s3.d.acceptance",
+    "sentences": [
+      "And right now — despite the wind, despite the weight — you choose acceptance.",
+      "Not giving up, and not pretending it’s easy — just letting what’s here be here, and walking on with it."
+    ]
+  },
+  {
+    "id": "s3.d.courage",
+    "sentences": [
+      "And right now — despite the wind, despite the weight — you choose courage.",
+      "Not the absence of the wind — just deciding to walk into it anyway."
+    ]
+  },
+  {
+    "id": "s3.d.calm",
+    "sentences": [
+      "And right now — despite the wind, despite the weight — you choose calm.",
+      "Not because everything’s resolved — because you’re allowed to rest before it is."
+    ]
+  },
+  {
+    "id": "s3.d.open",
+    "sentences": [
+      "The path opens."
+    ]
+  },
+  {
+    "id": "s3.e.open",
+    "sentences": [
+      "Open your eyes when you’re ready."
+    ]
+  },
+  {
+    "id": "s3.e.raise",
+    "sentences": [
+      "Raise your hands.",
+      "Let’s see what happens."
+    ]
+  },
+  {
+    "id": "s3.e.raise.acceptance",
+    "sentences": [
+      "Let your arms hang low, and open them out to your sides, palms facing forward.",
+      "Breathe out as they open.",
+      "Let’s see what happens."
+    ]
+  },
+  {
+    "id": "s3.f.kindness",
+    "sentences": [
+      "Something’s happening at your hands.",
+      "Small points of light are gathering — soft, warm, the color of the last hour of daylight.",
+      "The wider you open your arms, the more they spread.",
+      "Watch — where they land, something grows.",
+      "Small flowers, opening.",
+      "Around your hands.",
+      "Around you.",
+      "This is what kindness looks like when it has somewhere to go.",
+      "It doesn’t erase what you carried to get here.",
+      "It just grows around it, and through it.",
+      "Stay here a second.",
+      "This is yours."
+    ]
+  },
+  {
+    "id": "s3.f.acceptance",
+    "sentences": [
+      "The wind is still blowing, but it no longer pushes against you.",
+      "It passes through your open hands, and on.",
+      "The wider you open your arms, the more room there is — for the wind, for the weight, for whatever else came with you.",
+      "None of it has to leave before you can stand here.",
+      "This is what acceptance looks like.",
+      "Not liking it.",
+      "Not fighting it.",
+      "Just making room."
+    ]
+  },
+  {
+    "id": "s3.f.courage",
+    "sentences": [
+      "The air around your hands starts to hold steady, even as the wind keeps moving past you — a small pocket of calm you’re generating yourself.",
+      "The wider you open your arms, the more ground around you goes quiet.",
+      "This is what courage looks like: not a fearless place, just a held one, and you’re the one holding it."
+    ]
+  },
+  {
+    "id": "s3.f.calm",
+    "sentences": [
+      "The wind around you slows first, then the water sound, then even your own heartbeat feels less urgent.",
+      "The wider you open your arms, the further out the stillness spreads — like you’re the center of it, not the target of it.",
+      "This is what calm looks like when it isn’t forced.",
+      "It just spreads, because you stopped fighting it."
+    ]
+  },
+  {
+    "id": "s3.g.1",
+    "sentences": [
+      "Let your hands come down, slowly, whenever you’re ready."
+    ]
+  },
+  {
+    "id": "s3.g.1.acceptance",
+    "sentences": [
+      "Let your arms come back to your sides, slowly, whenever you’re ready."
+    ]
+  },
+  {
+    "id": "s3.g.2.kindness",
+    "sentences": [
+      "The flowers don’t need you to hold your arms up to keep existing.",
+      "They’re already planted."
+    ]
+  },
+  {
+    "id": "s3.g.2.acceptance",
+    "sentences": [
+      "You don’t have to keep your arms open for the room to stay.",
+      "It’s already made, and it’s already yours."
+    ]
+  },
+  {
+    "id": "s3.g.2.courage",
+    "sentences": [
+      "You don’t have to keep your arms open to hold the calm you made.",
+      "It’s already yours, and it moves with you."
+    ]
+  },
+  {
+    "id": "s3.g.2.calm",
+    "sentences": [
+      "The stillness doesn’t need your arms held wide to stay.",
+      "It has already settled, and it’s already yours."
+    ]
+  },
+  {
+    "id": "s3.g.3.kindness",
+    "sentences": [
+      "When you walk out of here and back into your day, the kindness goes with you.",
+      "It doesn’t need anything from you to stay."
+    ]
+  },
+  {
+    "id": "s3.g.3.acceptance",
+    "sentences": [
+      "When you walk out of here and back into your day, this room goes with you.",
+      "Whatever arrives, there will be space for it."
+    ]
+  },
+  {
+    "id": "s3.g.3.courage",
+    "sentences": [
+      "When you walk out of here and back into your day, this held place goes with you.",
+      "You can find it again whenever you need it."
+    ]
+  },
+  {
+    "id": "s3.g.3.calm",
+    "sentences": [
+      "When you walk out of here and back into your day, the stillness goes with you.",
+      "It will still be there when you need it."
+    ]
+  },
+  {
+    "id": "s3.f2.a",
+    "sentences": [
+      "Now, gently, bring the tip of your thumb to the tip of your first finger.",
+      "On both hands."
+    ]
+  },
+  {
+    "id": "s3.f2.word.kindness",
+    "sentences": [
+      "Notice the small lights drifting toward your fingertips."
+    ]
+  },
+  {
+    "id": "s3.f2.word.acceptance",
+    "sentences": [
+      "Notice the open space around you drawing in, gathering at your fingertips."
+    ]
+  },
+  {
+    "id": "s3.f2.word.courage",
+    "sentences": [
+      "Notice the stillness around you drawing in, gathering at your fingertips."
+    ]
+  },
+  {
+    "id": "s3.f2.word.calm",
+    "sentences": [
+      "Notice the quiet around you drawing in, gathering at your fingertips."
+    ]
+  },
+  {
+    "id": "s3.f2.b",
+    "sentences": [
+      "You don’t have to reach for it.",
+      "It already knows where you are.",
+      "Hold it there, at your fingertips.",
+      "Small.",
+      "Yours."
+    ]
+  },
+  {
+    "id": "s3.f2.hint1",
+    "sentences": [
+      "Thumb to first finger.",
+      "There’s no wrong way to do it."
+    ]
+  },
+  {
+    "id": "s3.f2.timeout1",
+    "sentences": [
+      "That’s alright.",
+      "It’s gathering anyway."
+    ]
+  },
+  {
+    "id": "s3.f2.chest",
+    "sentences": [
+      "Now bring your fingertips to the center of your chest."
+    ]
+  },
+  {
+    "id": "s3.f2.hint2",
+    "sentences": [
+      "Just the fingertips, resting at the center of your chest."
+    ]
+  },
+  {
+    "id": "s3.f2.timeout2",
+    "sentences": [
+      "That’s alright.",
+      "It finds its way in."
+    ]
+  },
+  {
+    "id": "s3.f2.letin",
+    "sentences": [
+      "Let it in.",
+      "It was never only around you.",
+      "It was always this: something you carry, not something you visit."
+    ]
+  },
+  {
+    "id": "s3.g.look",
+    "sentences": [
+      "And look: what went in, stayed."
+    ]
+  },
+  {
+    "id": "s4.a",
+    "sentences": [
+      "Whatever you noticed today — the thought you watched without chasing it, the thing you chose to carry it anyway and keep walking — you don’t have to hold onto the feeling to keep what you learned from it.",
+      "It’s already yours.",
+      "It doesn’t expire when the session ends."
+    ]
+  },
+  {
+    "id": "s4.b",
+    "sentences": [
+      "One more breath.",
+      "In..."
+    ]
+  },
+  {
+    "id": "s4.c",
+    "sentences": [
+      "...and out."
+    ]
+  },
+  {
+    "id": "s4.e",
+    "sentences": [
+      "You don’t need to see it to have it."
+    ]
+  },
+  {
+    "id": "s4.d",
+    "sentences": [
+      "That’s it for today."
+    ]
+  }
+]

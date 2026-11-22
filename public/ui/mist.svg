@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#aeb9cf"/>
+      <stop offset="0.38" stop-color="#d9d8de"/>
+      <stop offset="0.6" stop-color="#f1e2cf"/>
+      <stop offset="0.72" stop-color="#eadfe0"/>
+      <stop offset="1" stop-color="#e7e3ef"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.5" cy="0.6" r="0.45">
+      <stop offset="0" stop-color="#fff1d2" stop-opacity="0.95"/>
+      <stop offset="0.35" stop-color="#f8dcae" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#f8dcae" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="doorlight" cx="0.5" cy="0.62" r="0.7">
+      <stop offset="0" stop-color="#fffaf0"/>
+      <stop offset="0.35" stop-color="#fbe7b6"/>
+      <stop offset="0.75" stop-color="#e9c27a"/>
+      <stop offset="1" stop-color="#c99a4c"/>
+    </radialGradient>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3cf"/>
+      <stop offset="0.5" stop-color="#d7a957"/>
+      <stop offset="1" stop-color="#f6dc9c"/>
+    </linearGradient>
+    <linearGradient id="lake" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e4dde3"/>
+      <stop offset="1" stop-color="#ebe7f2"/>
+    </linearGradient>
+    <filter id="b4" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="4"/></filter>
+    <filter id="b10" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="10"/></filter>
+    <filter id="b28" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
+    <filter id="b60" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="60"/></filter>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#sun)"/>
+
+  <g transform="translate(0 -80)">
+  <!-- far mountains, soft and out of focus -->
+  <path d="M0 560 C120 470 210 430 300 450 C380 468 430 520 520 540 C600 556 660 520 720 528 L720 640 L0 640Z" fill="#9aa1b4" opacity="0.55" filter="url(#b10)"/>
+  <path d="M880 530 C960 500 1040 440 1140 430 C1250 420 1330 470 1420 500 C1500 526 1560 520 1600 512 L1600 640 L880 640Z" fill="#a49ba2" opacity="0.55" filter="url(#b10)"/>
+  <path d="M0 600 C160 560 300 556 460 584 C560 600 640 596 720 588 L720 650 L0 650Z" fill="#b8aeb2" opacity="0.6" filter="url(#b10)"/>
+  <path d="M900 590 C1040 566 1180 556 1320 574 C1440 590 1530 586 1600 578 L1600 650 L900 650Z" fill="#b9b0b8" opacity="0.6" filter="url(#b10)"/>
+
+  <!-- the lake -->
+  <rect y="618" width="1600" height="380" fill="url(#lake)"/>
+  <rect y="612" width="1600" height="16" fill="#fbf0de" opacity="0.7" filter="url(#b4)"/>
+
+  <!-- the door's glow, its light on the water -->
+  <ellipse cx="800" cy="440" rx="260" ry="250" fill="#f7d48e" opacity="0.5" filter="url(#b60)"/>
+  <ellipse cx="800" cy="690" rx="70" ry="120" fill="#f3d79c" opacity="0.55" filter="url(#b28)"/>
+
+  <!-- the door: an arch of light standing in the mist -->
+  <path d="M712 618 L712 360 C712 290 750 246 800 246 C850 246 888 290 888 360 L888 618Z" fill="url(#doorlight)"/>
+  <path d="M712 618 L712 360 C712 290 750 246 800 246 C850 246 888 290 888 360 L888 618" fill="none" stroke="url(#frame)" stroke-width="6"/>
+  <path d="M700 618 L700 356 C700 280 744 232 800 232 C856 232 900 280 900 356 L900 618" fill="none" stroke="#f6e2b0" stroke-width="1.5" opacity="0.7"/>
+  <!-- a step of light at its foot -->
+  <path d="M690 618 L910 618 L926 630 L674 630Z" fill="#f3dca8" opacity="0.85"/>
+
+  <!-- mist banks drifting across -->
+  <ellipse cx="380" cy="640" rx="520" ry="70" fill="#ffffff" opacity="0.55" filter="url(#b28)"/>
+  <ellipse cx="1240" cy="650" rx="560" ry="70" fill="#ffffff" opacity="0.5" filter="url(#b28)"/>
+  <ellipse cx="800" cy="700" rx="700" ry="110" fill="#f6f2f8" opacity="0.7" filter="url(#b28)"/>
+  </g>
+  <rect y="700" width="1600" height="200" fill="#ece8f2" opacity="0.6" filter="url(#b28)"/>
+
+  <!-- faint glass panels, as if seen through a window -->
+  <g fill="none" stroke="#ffffff" stroke-opacity="0.28" stroke-width="1.2" transform="translate(0 64)">
+    <rect x="40" y="40" width="200" height="150" rx="16"/>
+    <rect x="252" y="40" width="96" height="150" rx="16"/>
+    <rect x="40" y="202" width="96" height="96" rx="16"/>
+    <rect x="1252" y="40" width="96" height="150" rx="16"/>
+    <rect x="1360" y="40" width="200" height="150" rx="16"/>
+    <rect x="1464" y="202" width="96" height="96" rx="16"/>
+  </g>
+</svg>

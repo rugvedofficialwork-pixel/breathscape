@@ -1,0 +1,410 @@
+{
+  "s1.open": [
+    "s1.open/0.mp3",
+    "s1.open/1.mp3"
+  ],
+  "s1.c1.in": [
+    "s1.c1.in/0.mp3"
+  ],
+  "s1.c1.hold": [
+    "s1.c1.hold/0.mp3"
+  ],
+  "s1.c1.out": [
+    "s1.c1.out/0.mp3"
+  ],
+  "s1.c1.rest": [
+    "s1.c1.rest/0.mp3"
+  ],
+  "s1.c2.in": [
+    "s1.c2.in/0.mp3",
+    "s1.c2.in/1.mp3"
+  ],
+  "s1.c2.hold": [
+    "s1.c2.hold/0.mp3"
+  ],
+  "s1.c2.out": [
+    "s1.c2.out/0.mp3"
+  ],
+  "s1.c2.rest": [
+    "s1.c2.rest/0.mp3"
+  ],
+  "s1.c3.in": [
+    "s1.c3.in/0.mp3"
+  ],
+  "s1.c3.hold": [
+    "s1.c3.hold/0.mp3"
+  ],
+  "s1.c3.out": [
+    "s1.c3.out/0.mp3"
+  ],
+  "s1.c3.rest": [
+    "s1.c3.rest/0.mp3"
+  ],
+  "s1.c4.in": [
+    "s1.c4.in/0.mp3"
+  ],
+  "s1.c4.hold": [
+    "s1.c4.hold/0.mp3"
+  ],
+  "s1.c4.out": [
+    "s1.c4.out/0.mp3"
+  ],
+  "s1.c4.rest": [
+    "s1.c4.rest/0.mp3"
+  ],
+  "s1.c5.in": [
+    "s1.c5.in/0.mp3"
+  ],
+  "s1.c5.hold": [
+    "s1.c5.hold/0.mp3"
+  ],
+  "s1.c5.out": [
+    "s1.c5.out/0.mp3"
+  ],
+  "s1.c6.one": [
+    "s1.c6.one/0.mp3",
+    "s1.c6.one/1.mp3"
+  ],
+  "s1.c6.good": [
+    "s1.c6.good/0.mp3"
+  ],
+  "s1.close": [
+    "s1.close/0.mp3",
+    "s1.close/1.mp3"
+  ],
+  "s3.d.kindness": [
+    "s3.d.kindness/0.mp3",
+    "s3.d.kindness/1.mp3",
+    "s3.d.kindness/2.mp3"
+  ],
+  "s3.d.strength": [
+    "s3.d.strength/0.mp3",
+    "s3.d.strength/1.mp3"
+  ],
+  "s3.d.courage": [
+    "s3.d.courage/0.mp3",
+    "s3.d.courage/1.mp3"
+  ],
+  "s3.d.calm": [
+    "s3.d.calm/0.mp3",
+    "s3.d.calm/1.mp3"
+  ],
+  "s3.d.open": [
+    "s3.d.open/0.mp3"
+  ],
+  "s3.e.open": [
+    "s3.e.open/0.mp3"
+  ],
+  "s3.e.raise": [
+    "s3.e.raise/0.mp3",
+    "s3.e.raise/1.mp3"
+  ],
+  "s3.f.kindness": [
+    "s3.f.kindness/0.mp3",
+    "s3.f.kindness/1.mp3",
+    "s3.f.kindness/2.mp3",
+    "s3.f.kindness/3.mp3",
+    "s3.f.kindness/4.mp3",
+    "s3.f.kindness/5.mp3",
+    "s3.f.kindness/6.mp3",
+    "s3.f.kindness/7.mp3",
+    "s3.f.kindness/8.mp3",
+    "s3.f.kindness/9.mp3",
+    "s3.f.kindness/10.mp3",
+    "s3.f.kindness/11.mp3"
+  ],
+  "s3.f.strength": [
+    "s3.f.strength/0.mp3",
+    "s3.f.strength/1.mp3",
+    "s3.f.strength/2.mp3",
+    "s3.f.strength/3.mp3"
+  ],
+  "s3.f.courage": [
+    "s3.f.courage/0.mp3",
+    "s3.f.courage/1.mp3",
+    "s3.f.courage/2.mp3"
+  ],
+  "s3.f.calm": [
+    "s3.f.calm/0.mp3",
+    "s3.f.calm/1.mp3",
+    "s3.f.calm/2.mp3",
+    "s3.f.calm/3.mp3"
+  ],
+  "s3.g.1": [
+    "s3.g.1/0.mp3"
+  ],
+  "s3.g.2.kindness": [
+    "s3.g.2.kindness/0.mp3",
+    "s3.g.2.kindness/1.mp3"
+  ],
+  "s3.g.2.strength": [
+    "s3.g.2.strength/0.mp3",
+    "s3.g.2.strength/1.mp3"
+  ],
+  "s3.g.2.courage": [
+    "s3.g.2.courage/0.mp3",
+    "s3.g.2.courage/1.mp3"
+  ],
+  "s3.g.2.calm": [
+    "s3.g.2.calm/0.mp3",
+    "s3.g.2.calm/1.mp3"
+  ],
+  "s3.g.3.kindness": [
+    "s3.g.3.kindness/0.mp3",
+    "s3.g.3.kindness/1.mp3"
+  ],
+  "s3.g.3.strength": [
+    "s3.g.3.strength/0.mp3"
+  ],
+  "s3.g.3.courage": [
+    "s3.g.3.courage/0.mp3",
+    "s3.g.3.courage/1.mp3"
+  ],
+  "s3.g.3.calm": [
+    "s3.g.3.calm/0.mp3",
+    "s3.g.3.calm/1.mp3"
+  ],
+  "s3.f2.a": [
+    "s3.f2.a/0.mp3",
+    "s3.f2.a/1.mp3"
+  ],
+  "s3.f2.word.kindness": [
+    "s3.f2.word.kindness/0.mp3"
+  ],
+  "s3.f2.word.strength": [
+    "s3.f2.word.strength/0.mp3"
+  ],
+  "s3.f2.word.courage": [
+    "s3.f2.word.courage/0.mp3"
+  ],
+  "s3.f2.word.calm": [
+    "s3.f2.word.calm/0.mp3"
+  ],
+  "s3.f2.b": [
+    "s3.f2.b/0.mp3",
+    "s3.f2.b/1.mp3",
+    "s3.f2.b/2.mp3",
+    "s3.f2.b/3.mp3",
+    "s3.f2.b/4.mp3"
+  ],
+  "s3.f2.hint1": [
+    "s3.f2.hint1/0.mp3",
+    "s3.f2.hint1/1.mp3"
+  ],
+  "s3.f2.timeout1": [
+    "s3.f2.timeout1/0.mp3",
+    "s3.f2.timeout1/1.mp3"
+  ],
+  "s3.f2.chest": [
+    "s3.f2.chest/0.mp3"
+  ],
+  "s3.f2.hint2": [
+    "s3.f2.hint2/0.mp3"
+  ],
+  "s3.f2.timeout2": [
+    "s3.f2.timeout2/0.mp3",
+    "s3.f2.timeout2/1.mp3"
+  ],
+  "s3.f2.letin": [
+    "s3.f2.letin/0.mp3",
+    "s3.f2.letin/1.mp3",
+    "s3.f2.letin/2.mp3"
+  ],
+  "s3.g.look": [
+    "s3.g.look/0.mp3"
+  ],
+  "s4.a": [
+    "s4.a/0.mp3",
+    "s4.a/1.mp3",
+    "s4.a/2.mp3"
+  ],
+  "s4.b": [
+    "s4.b/0.mp3",
+    "s4.b/1.mp3"
+  ],
+  "s4.c": [
+    "s4.c/0.mp3"
+  ],
+  "s4.e": [
+    "s4.e/0.mp3"
+  ],
+  "s4.d": [
+    "s4.d/0.mp3"
+  ],
+  "_voice": {
+    "voice": "en-US-AndrewNeural",
+    "rate": "-24%",
+    "pitch": "-14Hz"
+  },
+  "s2.m1.a": [
+    "s2.m1.a/0.mp3",
+    "s2.m1.a/1.mp3",
+    "s2.m1.a/2.mp3",
+    "s2.m1.a/3.mp3"
+  ],
+  "s2.m1.b": [
+    "s2.m1.b/0.mp3",
+    "s2.m1.b/1.mp3"
+  ],
+  "s2.m2.a": [
+    "s2.m2.a/0.mp3",
+    "s2.m2.a/1.mp3"
+  ],
+  "s2.m2.b": [
+    "s2.m2.b/0.mp3",
+    "s2.m2.b/1.mp3",
+    "s2.m2.b/2.mp3"
+  ],
+  "s2.m2.c": [
+    "s2.m2.c/0.mp3",
+    "s2.m2.c/1.mp3",
+    "s2.m2.c/2.mp3",
+    "s2.m2.c/3.mp3"
+  ],
+  "s2.m3.a": [
+    "s2.m3.a/0.mp3"
+  ],
+  "s2.m3.b": [
+    "s2.m3.b/0.mp3"
+  ],
+  "s2.m3.c": [
+    "s2.m3.c/0.mp3",
+    "s2.m3.c/1.mp3"
+  ],
+  "s2.m3.d": [
+    "s2.m3.d/0.mp3"
+  ],
+  "s2.m4.a": [
+    "s2.m4.a/0.mp3"
+  ],
+  "s2.m4.b": [
+    "s2.m4.b/0.mp3",
+    "s2.m4.b/1.mp3"
+  ],
+  "s2.m5.a": [
+    "s2.m5.a/0.mp3",
+    "s2.m5.a/1.mp3"
+  ],
+  "s2.m5.b": [
+    "s2.m5.b/0.mp3",
+    "s2.m5.b/1.mp3",
+    "s2.m5.b/2.mp3"
+  ],
+  "s2.m6.a": [
+    "s2.m6.a/0.mp3",
+    "s2.m6.a/1.mp3",
+    "s2.m6.a/2.mp3"
+  ],
+  "s2.m6.b": [
+    "s2.m6.b/0.mp3",
+    "s2.m6.b/1.mp3"
+  ],
+  "s3.a.1": [
+    "s3.a.1/0.mp3"
+  ],
+  "s3.a.2": [
+    "s3.a.2/0.mp3"
+  ],
+  "s3.a.3": [
+    "s3.a.3/0.mp3"
+  ],
+  "s3.b.1": [
+    "s3.b.1/0.mp3"
+  ],
+  "s3.b.2": [
+    "s3.b.2/0.mp3",
+    "s3.b.2/1.mp3",
+    "s3.b.2/2.mp3"
+  ],
+  "s3.b.3": [
+    "s3.b.3/0.mp3",
+    "s3.b.3/1.mp3"
+  ],
+  "s3.b.4": [
+    "s3.b.4/0.mp3"
+  ],
+  "s3.c.1a": [
+    "s3.c.1a/0.mp3"
+  ],
+  "s3.c.1b": [
+    "s3.c.1b/0.mp3"
+  ],
+  "s3.c.2": [
+    "s3.c.2/0.mp3",
+    "s3.c.2/1.mp3",
+    "s3.c.2/2.mp3",
+    "s3.c.2/3.mp3"
+  ],
+  "s3.c.3": [
+    "s3.c.3/0.mp3",
+    "s3.c.3/1.mp3"
+  ],
+  "s3.c.4a": [
+    "s3.c.4a/0.mp3"
+  ],
+  "s3.c.4b": [
+    "s3.c.4b/0.mp3",
+    "s3.c.4b/1.mp3"
+  ],
+  "s3.c.5": [
+    "s3.c.5/0.mp3"
+  ],
+  "s3.d.intro1": [
+    "s3.d.intro1/0.mp3"
+  ],
+  "s3.d.intro2": [
+    "s3.d.intro2/0.mp3",
+    "s3.d.intro2/1.mp3",
+    "s3.d.intro2/2.mp3",
+    "s3.d.intro2/3.mp3"
+  ],
+  "s1.open.head": [
+    "s1.open.head/0.mp3",
+    "s1.open.head/1.mp3",
+    "s1.open.head/2.mp3",
+    "s1.open.head/3.mp3"
+  ],
+  "s1.c1.in.head": [
+    "s1.c1.in.head/0.mp3"
+  ],
+  "s1.c1.out.head": [
+    "s1.c1.out.head/0.mp3"
+  ],
+  "s1.close.head": [
+    "s1.close.head/0.mp3",
+    "s1.close.head/1.mp3"
+  ],
+  "s3.d.acceptance": [
+    "s3.d.acceptance/0.mp3",
+    "s3.d.acceptance/1.mp3"
+  ],
+  "s3.f.acceptance": [
+    "s3.f.acceptance/0.mp3",
+    "s3.f.acceptance/1.mp3",
+    "s3.f.acceptance/2.mp3",
+    "s3.f.acceptance/3.mp3",
+    "s3.f.acceptance/4.mp3",
+    "s3.f.acceptance/5.mp3",
+    "s3.f.acceptance/6.mp3",
+    "s3.f.acceptance/7.mp3"
+  ],
+  "s3.g.2.acceptance": [
+    "s3.g.2.acceptance/0.mp3",
+    "s3.g.2.acceptance/1.mp3"
+  ],
+  "s3.g.3.acceptance": [
+    "s3.g.3.acceptance/0.mp3",
+    "s3.g.3.acceptance/1.mp3"
+  ],
+  "s3.f2.word.acceptance": [
+    "s3.f2.word.acceptance/0.mp3"
+  ],
+  "s3.e.raise.acceptance": [
+    "s3.e.raise.acceptance/0.mp3",
+    "s3.e.raise.acceptance/1.mp3",
+    "s3.e.raise.acceptance/2.mp3"
+  ],
+  "s3.g.1.acceptance": [
+    "s3.g.1.acceptance/0.mp3"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "_voice": {
+    "voice": "Rugved (recorded)",
+    "rate": "",
+    "pitch": ""
+  },
+  "s1.open.head": [
+    "s1.open.head/0.wav",
+    "s1.open.head/1.wav",
+    "s1.open.head/2.wav",
+    "s1.open.head/3.wav"
+  ],
+  "s1.c1.in.head": [
+    "s1.c1.in.head/0.wav"
+  ],
+  "s1.c1.hold": [
+    "s1.c1.hold/0.wav"
+  ],
+  "s1.c1.out.head": [
+    "s1.c1.out.head/0.wav"
+  ],
+  "s1.c1.rest": [
+    "s1.c1.rest/0.wav"
+  ],
+  "s1.c2.in": [
+    "s1.c2.in/0.wav",
+    "s1.c2.in/1.wav"
+  ],
+  "s1.c2.hold": [
+    "s1.c2.hold/0.wav"
+  ],
+  "s1.c2.out": [
+    "s1.c2.out/0.wav"
+  ],
+  "s1.c2.rest": [
+    "s1.c2.rest/0.wav"
+  ],
+  "s1.c3.in": [
+    "s1.c3.in/0.wav"
+  ],
+  "s1.c3.hold": [
+    "s1.c3.hold/0.wav"
+  ],
+  "s1.c3.out": [
+    "s1.c3.out/0.wav"
+  ],
+  "s1.c3.rest": [
+    "s1.c3.rest/0.wav"
+  ],
+  "s1.c4.in": [
+    "s1.c4.in/0.wav"
+  ],
+  "s1.c4.hold": [
+    "s1.c4.hold/0.wav"
+  ],
+  "s1.c4.out": [
+    "s1.c4.out/0.wav"
+  ],
+  "s1.c4.rest": [
+    "s1.c4.rest/0.wav"
+  ],
+  "s1.c5.in": [
+    "s1.c5.in/0.wav"
+  ],
+  "s1.c5.hold": [
+    "s1.c5.hold/0.wav"
+  ],
+  "s1.c5.out": [
+    "s1.c5.out/0.wav"
+  ],
+  "s1.c6.one": [
+    "s1.c6.one/0.wav",
+    "s1.c6.one/1.wav"
+  ],
+  "s1.c6.good": [
+    "s1.c6.good/0.wav"
+  ],
+  "s1.close.head": [
+    "s1.close.head/0.wav",
+    "s1.close.head/1.wav"
+  ]
+}

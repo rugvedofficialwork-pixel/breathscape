@@ -1,0 +1,78 @@
+/* The Door: misty, golden look for the start, word and end screens. A soft landscape with a door of light standing in
+   the mist, frosted glass, an elegant serif with a gold highlight, a dark pill and soft glass pills. */
+:root {
+  --ink: #2c2b33;
+  --ink-soft: #5f5d6b;
+  --glass: rgba(255, 255, 255, 0.38);
+  --glass-line: rgba(255, 255, 255, 0.6);
+  --gold-a: #b8862f;
+  --gold-b: #e9c675;
+  --gold-c: #fff1c4;
+}
+
+.mist { background: #e7e3ef url('/ui/mist.svg') center / cover no-repeat !important; color: var(--ink); font-family: 'Manrope', system-ui, sans-serif; }
+.mist::after { content: ''; position: absolute; inset: 0; pointer-events: none; background: radial-gradient(70% 55% at 50% 42%, rgba(255, 248, 230, 0) 40%, rgba(80, 76, 100, 0.12) 100%); }
+
+#start.mist, #picker.mist { display: block; overflow: hidden; text-align: center; gap: 0; }
+.mist > * { position: relative; z-index: 1; }
+
+/* top bar */
+.mist .topbar { position: absolute; top: 0; left: 0; right: 0; display: flex; align-items: center; justify-content: space-between; padding: 1.3rem 2.2rem; }
+.mist .brand { display: inline-flex; align-items: center; gap: 0.55rem; font: 400 1.45rem/1 'Playfair Display', Georgia, serif; color: #fff; letter-spacing: 0.01em; text-shadow: 0 1px 10px rgba(60, 60, 90, 0.25); }
+.mist .brand em { font-style: normal; background: linear-gradient(90deg, #fff0c2, #f1c96e); filter: drop-shadow(0 1px 6px rgba(120, 90, 40, 0.45)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mist .brand svg { width: 26px; height: 26px; fill: none; stroke: #fff; stroke-width: 1.4; stroke-linecap: round; filter: drop-shadow(0 1px 6px rgba(120, 100, 60, 0.35)); }
+.mist .steps { display: flex; gap: 2.4rem; font-size: 0.86rem; color: rgba(255, 255, 255, 0.92); text-shadow: 0 1px 8px rgba(60, 60, 90, 0.3); }
+.mist .pill { padding: 0.55rem 1.2rem; border-radius: 999px; font-size: 0.85rem; color: #fff; background: rgba(255, 255, 255, 0.22);
+  border: 1px solid rgba(255, 255, 255, 0.45); backdrop-filter: blur(10px); box-shadow: 0 6px 20px rgba(80, 76, 100, 0.12); }
+
+/* the words */
+/* the words sit under the door, over the mist on the water: dark ink and a deep gold, so they read clearly */
+.mist .lead { position: absolute; left: 50%; top: 77%; transform: translate(-50%, -50%); width: min(92%, 1000px); }
+#start.mist h1, #picker.mist h2 { margin: 0; font: 400 clamp(2.1rem, 4.4vw, 3.9rem)/1.08 'Playfair Display', Georgia, serif; letter-spacing: -0.015em; color: #2a2932;
+  text-shadow: 0 1px 18px rgba(255, 255, 255, 0.85); }
+#picker.mist h2 { font-size: clamp(1.9rem, 3.6vw, 3.1rem); }
+.mist .gold { background: linear-gradient(100deg, #9b6a1c 0%, #c8913a 35%, #e2b35a 60%, #b07a26 100%); -webkit-background-clip: text; background-clip: text; color: transparent;
+  text-shadow: none; filter: drop-shadow(0 1px 10px rgba(255, 240, 210, 0.9)); }
+.mist .sub { margin: 1.1rem auto 0; max-width: 40rem; font-size: clamp(0.95rem, 1.3vw, 1.08rem); line-height: 1.6; color: var(--ink); }
+.mist .note { color: var(--ink-soft); font-size: 0.92rem; }
+.mist .ctas { margin-top: 1.8rem; display: flex; gap: 1rem; align-items: center; justify-content: center; flex-wrap: wrap; }
+
+/* buttons: a dark pill, and soft glass pills */
+.mist button { font: 500 0.95rem 'Manrope', system-ui, sans-serif; letter-spacing: 0.01em; color: var(--ink); background: var(--glass);
+  border: 1px solid var(--glass-line); border-radius: 999px; padding: 0.75rem 1.6rem; backdrop-filter: blur(10px);
+  box-shadow: 0 6px 22px rgba(80, 76, 100, 0.1); transition: background 0.25s, transform 0.25s, box-shadow 0.25s; }
+.mist button:hover { background: rgba(255, 255, 255, 0.6); border-color: #fff; transform: translateY(-1px); }
+.mist button.dark { color: #fff; background: linear-gradient(180deg, #3a3940, #1d1c22); border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 10px 26px rgba(30, 28, 40, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.12); }
+.mist button.dark:hover { background: linear-gradient(180deg, #45444c, #25242b); }
+.mist button:disabled { opacity: 0.6; cursor: default; transform: none; }
+
+/* the faint row of stages along the bottom, like a row of logos */
+.mist .strip { position: absolute; left: 50%; bottom: 2.2%; transform: translateX(-50%); display: flex; gap: 3rem; align-items: center;
+  padding-top: 0.9rem; border-top: 1px solid rgba(255, 255, 255, 0.8); color: rgba(70, 68, 84, 0.55); font: 600 1.05rem 'Manrope', system-ui, sans-serif; white-space: nowrap; }
+.mist .strip span { display: inline-flex; align-items: center; gap: 0.45rem; }
+.mist .strip svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* the word picker */
+.mist .pick { top: 78%; }
+.mist .pick .note { margin-top: 0.6rem; }
+.mist #words { margin: 1.6rem 0 0; display: flex; gap: 0.9rem; justify-content: center; flex-wrap: wrap; }
+.mist #words button { min-width: 9.5rem; font-size: 1.02rem; padding: 0.85rem 1.6rem; }
+.mist #words button:hover { color: #fff; background: linear-gradient(180deg, #3a3940, #1d1c22); }
+.mist .toggle { margin: 1.4rem auto 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem; max-width: 52rem; font-size: 0.82rem; color: var(--ink-soft); }
+.mist .toggle > span { width: 100%; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; font-size: 0.72rem; color: var(--ink-soft); }
+.mist .toggle label { padding: 0.35rem 0.8rem; border-radius: 999px; background: rgba(255, 255, 255, 0.3); border: 1px solid rgba(255, 255, 255, 0.55); backdrop-filter: blur(8px); cursor: pointer; }
+.mist .toggle label:has(input:checked) { background: rgba(255, 255, 255, 0.75); color: var(--ink); border-color: #fff; }
+.mist .toggle input { accent-color: var(--gold-a); margin-right: 0.3rem; }
+
+/* the end card */
+#endcard.mist .endline { font: 400 clamp(2.2rem, 5vw, 4rem)/1.1 'Playfair Display', Georgia, serif; color: #fff; text-shadow: 0 2px 24px rgba(70, 60, 90, 0.28); margin-top: 18vh; }
+
+/* small screens */
+@media (max-width: 760px) {
+  .mist .steps, .mist .strip { display: none; }
+  .mist .topbar { padding: 1rem 1.1rem; }
+  .mist .lead { top: 76%; }
+  .mist .pick { top: 50%; position: relative; transform: none; left: auto; margin: 6rem auto 2rem; }
+  #picker.mist { overflow-y: auto; }
+}
